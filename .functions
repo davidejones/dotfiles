@@ -1,0 +1,4 @@
+function process_with_most_memory() {
+    ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head
+}
+
