@@ -1,0 +1,29 @@
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[window]
+blur = true
+dynamic_padding = true
+opacity = 0.8
+
+[window.padding]
+x = 5
+y = 5
+
+[general]
+live_config_reload = true
+
+# only for alacritty-smart-copy
+#[[keyboard.bindings]]
+#key = "V"
+#mods = "Control"
+#mode = "~Vi"
+#action = "Paste"
+
+#[[keyboard.bindings]]
+#key = "C"
+#mods = "Control"
+#mode = "~Vi"
+#action = "CopyDynamic"
