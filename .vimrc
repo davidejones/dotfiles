@@ -10,3 +10,6 @@ set tabstop=4       " The width of a TAB is set to 4.
                     " Vim will interpret it to be having
                     " a width of 4.
 
+
+colorscheme darcula
+set termguicolors
