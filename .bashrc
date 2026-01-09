@@ -30,4 +30,7 @@ source ~/.functions
 # Use fish in place of bash
 # keep this line at the bottom of ~/.bashrc
 # fish isn't great as the login shell thats why its setup like this
+# For Nixbased use this:
 # [ -x /bin/fish ] && [ -z "$IN_NIX_SHELL" ] && SHELL=/bin/fish exec fish
+# Otherwise use this:
+# [ -x /bin/fish ] && SHELL=/bin/fish exec fish

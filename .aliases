@@ -1,3 +1,17 @@
-alias ls="ls --color"
+# Check operating system
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    # macOS-specific settings
+    # Ensure gls is installed via 'brew install coreutils'
+    if command -v gls >/dev/null 2>&1; then
+        alias ls='gls --color=auto'
+    else
+        # Fallback to BSD ls if gls is missing
+        alias ls='ls -G'
+    fi
+elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    # Linux-specific settings
+    alias ls='ls --color=auto'
+fi
+
 alias ll="ls -alF"
 # alias ll="eza -al -s modified --color=auto  --icons --group-directories-first --hyperlink"
